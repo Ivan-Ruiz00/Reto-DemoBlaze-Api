@@ -10,9 +10,9 @@ Feature: Sign up
     And method post
     Then status <status>
     Examples:
-      | username      | password | status |
-      | prsiuaasnfia  | 2355     | 200    |
-      | prsqisufasfin |          | 200    |
+      | username       | password | status |
+      | prsiugaasnfia  | 2355     | 200    |
+      | prsqisufawsfin |          | 200    |
 
   @Post
   Scenario Outline: Sign up incorrectly
