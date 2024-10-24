@@ -8,7 +8,7 @@ Feature: Log in
     Given url "https://api.demoblaze.com/login"
     When request {"username": "<username>","password":"<password>"}
     And method post
-    Then match response == {"Auth_token: YWZpYWRsamZvMTczMDM3OA"}
+    Then match response.replace('"','').replace('\n','') == '#regex ^Auth_token:.*'
     And status <status>
     Examples:
       | username  | password | status |

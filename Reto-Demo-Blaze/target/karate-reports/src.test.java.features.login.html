@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,12 +50,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2024-10-24 01:34:14 p. m.</div>
+    <div>2024-10-24 01:59:05 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1.1:15]"><span>[1.1:15]</span> <span>Log in correctly</span></a>
           </div>
         </div>
@@ -83,8 +83,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>4353</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2094</span>
             </div>
           </div>
           
@@ -101,7 +101,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &quot;https://api.demoblaze.com/login&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">349</div>
+    <div class="time-cell passed">184</div>
   </div>
 
    
@@ -129,7 +129,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>request {&quot;username&quot;: &quot;afiadljfo&quot;,&quot;password&quot;:&quot;1234f&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">286</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -157,7 +157,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">3414</div>
+    <div class="time-cell passed">1689</div>
   </div>
 
    
@@ -166,7 +166,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.10">13:34:12.513 request:
+  <div class="preformatted" data-parent="1.10">13:59:04.520 request:
 1 &gt; POST https://api.demoblaze.com/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -176,16 +176,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;afiadljfo&quot;,&quot;password&quot;:&quot;1234f&quot;}
 
-13:34:13.918 response time in milliseconds: 1390
+13:59:05.202 response time in milliseconds: 674
 1 &lt; 200
 1 &lt; Content-Type: application/json
 1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: 30d4a376ad836054d69fd366314d95b5
-1 &lt; Date: Thu, 24 Oct 2024 18:34:13 GMT
+1 &lt; X-Cloud-Trace-Context: 5e79b1944f85a65cc4767b48bafe1c73
+1 &lt; Date: Thu, 24 Oct 2024 18:59:04 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Cache-Control: private
 1 &lt; Transfer-Encoding: chunked
-&quot;Auth_token: YWZpYWRsamZvMTczMDM5NA==&quot;
+&quot;Auth_token: YWZpYWRsamZvMTczMDM5Ng==&quot;
 
 
 </div>   
@@ -201,13 +201,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.11">
-      <div class="step-ref failed">11</div>
+      <div class="step-ref passed">11</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>match response == {&quot;Auth_token: YWZpYWRsamZvMTczMDM3OA&quot;}</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.replace(&#39;&quot;&#39;,&#39;&#39;).replace(&#39;\n&#39;,&#39;&#39;) == &#39;#regex ^Auth_token:.*&#39;</span>
       </div>
     </div>
-    <div class="time-cell failed">303</div>
+    <div class="time-cell passed">153</div>
   </div>
 
    
@@ -216,11 +216,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.11">13:34:14.282 src/test/java/features/login.feature:11
-Then match response == {&quot;Auth_token: YWZpYWRsamZvMTczMDM3OA&quot;}
-net.minidev.json.parser.ParseException: Unexpected character (}) at position 36.
-src/test/java/features/login.feature:11
-</div>   
+     
 
   
 
@@ -233,13 +229,13 @@ src/test/java/features/login.feature:11
 
   <div class="step-row">
     <div class="step-container" id="1.12">
-      <div class="step-ref skipped">12</div>
+      <div class="step-ref passed">12</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
