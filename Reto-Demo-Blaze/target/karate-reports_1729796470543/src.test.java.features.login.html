@@ -39,7 +39,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-pass" class="bg-success">1</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -50,16 +50,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2024-10-24 02:03:48 p. m.</div>
+    <div>2024-10-24 01:59:05 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
             <a href="#[1.1:15]"><span>[1.1:15]</span> <span>Log in correctly</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[2.1:26]"><span>[2.1:26]</span> <span>Login Fallido</span></a>
           </div>
         </div>
       </div>
@@ -87,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2203</span>
+              <span>ms:</span>&nbsp;<span>2094</span>
             </div>
           </div>
           
@@ -104,7 +101,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &quot;https://api.demoblaze.com/login&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">223</div>
+    <div class="time-cell passed">184</div>
   </div>
 
    
@@ -132,7 +129,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>request {&quot;username&quot;: &quot;afiadljfo&quot;,&quot;password&quot;:&quot;1234f&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">92</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -160,7 +157,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1729</div>
+    <div class="time-cell passed">1689</div>
   </div>
 
    
@@ -169,7 +166,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.10">14:03:47.777 request:
+  <div class="preformatted" data-parent="1.10">13:59:04.520 request:
 1 &gt; POST https://api.demoblaze.com/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -179,12 +176,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;afiadljfo&quot;,&quot;password&quot;:&quot;1234f&quot;}
 
-14:03:48.444 response time in milliseconds: 657
+13:59:05.202 response time in milliseconds: 674
 1 &lt; 200
 1 &lt; Content-Type: application/json
 1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: 3e855aa0341a6d0de92ef12edf259e21
-1 &lt; Date: Thu, 24 Oct 2024 19:03:47 GMT
+1 &lt; X-Cloud-Trace-Context: 5e79b1944f85a65cc4767b48bafe1c73
+1 &lt; Date: Thu, 24 Oct 2024 18:59:04 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Cache-Control: private
 1 &lt; Transfer-Encoding: chunked
@@ -210,7 +207,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>match response.replace(&#39;&quot;&#39;,&#39;&#39;).replace(&#39;\n&#39;,&#39;&#39;) == &#39;#regex ^Auth_token:.*&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">159</div>
+    <div class="time-cell passed">153</div>
   </div>
 
    
@@ -239,186 +236,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       </div>
     </div>
     <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.1:26]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">Post</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.1:26]</span>
-                <span class="scenario-name">Login Fallido</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>310</span>
-            </div>
-          </div>
-          
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>url &quot;https://api.demoblaze.com/login&quot;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.20">
-      <div class="step-ref passed">20</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>request {&quot;username&quot;:&quot;afiadljfo&quot;,&quot;password&quot;:&quot;sxaxq12&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.21">
-      <div class="step-ref passed">21</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">269</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.21">14:03:48.630 request:
-1 &gt; POST https://api.demoblaze.com/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 45
-1 &gt; Host: api.demoblaze.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.18)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;afiadljfo&quot;,&quot;password&quot;:&quot;sxaxq12&quot;}
-
-14:03:48.894 response time in milliseconds: 262
-1 &lt; 200
-1 &lt; Content-Type: application/json
-1 &lt; Vary: Accept-Encoding
-1 &lt; X-Cloud-Trace-Context: a7ef28d34b4d1e60f170d33542bd39e8;o=1
-1 &lt; Date: Thu, 24 Oct 2024 19:03:48 GMT
-1 &lt; Server: Google Frontend
-1 &lt; Cache-Control: private
-1 &lt; Transfer-Encoding: chunked
-{&quot;errorMessage&quot;:&quot;Wrong password.&quot;}
-
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.22">
-      <div class="step-ref passed">22</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.23">
-      <div class="step-ref passed">23</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response == {&quot;errorMessage&quot;:&quot;Wrong password.&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">39</div>
   </div>
 
    
