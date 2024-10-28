@@ -1,0 +1,16 @@
+Conclusiones:
+
+* Se encontró que el microservicio no posee manejador de errores con respecto al body, si no se le envía body no indicará que le falta sino arrojará un error 500 y un mensaje
+en xml de que el servicio puede estar caído
+
+* Se recomienda agregar un mensaje que valide cuando una cuenta es creada exitosamente, puesto que el microservicio por el momento envía una respuesta vacía, lo que puede llevar
+a pensar de que no sucedió el proceso de creación exitosamente
+
+* Se recomienda mantener una homogeniedad con las respuestas, puesto que a veces el microservicio arroja respuestas tipo JSON como cuando algún dato es erróneo o el usuario ya
+existe y otras simplemente contesta una cadena de texto como cuando se valida correctamente las credenciales de ingreso, esto mismo se puede hacer colocando esta información
+dentro de un JSON
+
+* Se evidenció una buena parctica de que cambia el token de ingreso cada cierto tiempo lo que mejora la seguridad de la API ante posibles filtraciones de alguno de estos tokens,
+por esto mismo, se decidió que la automatización solo valide que venga Auth_token y no sea vacío sin importar que venga después
+
+* En general es una API funcional, que tiene campos de mejora, pero cumple con los requisitos mínimos para los flujos asignados
