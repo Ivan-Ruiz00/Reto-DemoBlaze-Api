@@ -11,16 +11,14 @@ Feature: Log in
     Then match response.replace('"','').replace('\n','') == '#regex ^Auth_token:.*'
     And status <status>
     Examples:
-      | username  | password | status |
-      | afiadljfo | 1234f    | 200    |
+      | read('classpath:DatosLogin.csv') |
 
   @Post
   Scenario Outline: Login Fallido
     When url "https://api.demoblaze.com/login"
-    When request {"username":"<username>","password":"<password>"}
+    When request {"username":"<wrongUsername>","password":"<wrongPassword>"}
     And method post
-    Then status <status>
+    Then status <wrongStatus>
     And match response == {"errorMessage":"Wrong password."}
     Examples:
-      | username  | password | status |
-      | afiadljfo | sxaxq12  | 200    |
+      | read('classpath:DatosLogin.csv') |

@@ -10,18 +10,14 @@ Feature: Sign up
     And method post
     Then status <status>
     Examples:
-      | username         | password | status |
-      | prsiugaasdfnfia  | 2355     | 200    |
-      | prsqissufawsafin |          | 200    |
+      | read('classpath:DatosSignUp.csv') |
 
   @Post
   Scenario Outline: Sign up incorrectly
     Given url "https://api.demoblaze.com/signup"
-    When request {"username":"<username>","password":"<password>"}
+    When request {"username":"<wrongUsername>","password":"<wrongPassword>"}
     And method post
-    Then status <status>
+    Then status <wrongStatus>
     And match response == {"errorMessage":"This user already exist."}
     Examples:
-      | username      | password     | status |
-      | prsiuaasnfia  | prsiuaasnfia | 200    |
-      | prsqisufasfin |              | 200    |
+      | read('classpath:DatosSignUp.csv') |
